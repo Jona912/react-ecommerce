@@ -1,6 +1,6 @@
 {
   "name": "jonathan-superprof",
-  "homepage": "http://Jona912.github.io/react-ecommerce",
+  "homepage": "http://jona912.github.io/react-ecommerce",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",

@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
+// Detecta automáticamente si estás en GitHub Pages
+const repo = 'react-ecommerce'; // <-- poné tu repo acá
+
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-})
+  base: command === 'build' ? `/${repo}/` : '/',
+}))
